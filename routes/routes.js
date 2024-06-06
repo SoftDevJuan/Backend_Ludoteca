@@ -4,8 +4,8 @@ const path = require('path');
 const controller = require('../controllers/controllers.js');
 
 
-router.get('/consultarFolios', controller.consultarFolios);
-router.post('/registrarInfante', controller.registrarInfante);
+router.get('/api/consultarFolios', controller.consultarFolios);
+router.post('/api/registrarInfante', controller.registrarInfante);
 
 
 module.exports = router;
