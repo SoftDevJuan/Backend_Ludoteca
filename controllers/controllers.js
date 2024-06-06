@@ -17,21 +17,8 @@ connection.connect((err) =>{
     console.log('conexion a la db exitosa');
 });
 
-/*const consultarFolios = (req,res) => {
-    connection.query('CALL consultarFolios()', (err, results) =>{
-        if(err){
-            console.log("Error al obtener los folios: ", err);
-            res.status(500).end('Error interno del Servidor (obtener Folios)');
-            return;
-        }
-        res.json(results);
-    });
-}*/
-
-
-
 const consultarFolios = (req,res) => {
-    connection.query('SELECT folio FROM registro', (err, results) =>{
+    connection.query('CALL consultarFolios()', (err, results) =>{
         if(err){
             console.log("Error al obtener los folios: ", err);
             res.status(500).end('Error interno del Servidor (obtener Folios)');
