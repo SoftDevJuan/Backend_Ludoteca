@@ -57,7 +57,7 @@ const registrarInfante = (req,res) =>{
             console.log('Error al registrar: ', err);
             res.status(500).end('Error al registrar');
         }
-        res.json(results);
+        res.json(results[0]);
     });
 }
 
