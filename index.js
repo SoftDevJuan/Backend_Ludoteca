@@ -12,6 +12,10 @@ app.get('/',(req,res) => {
     res.send("host en linea, Hola Edmundo como tas ? todo bien ? de incapacidad o que ? xD");
 });
 
+app.get('/consultarFolios',(req,res) => {
+    res.send("aqui estan tus folios");
+});
+
 app.use('/', routes);
 
 app.listen(port,()=>{
