@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.get('/',(req,res) => {
-    res.send("host en linea");
+    res.send("host en linea, Hola Edmundo como tas ? todo bien ? de incapacidad o que ? xD");
 });
 
 app.use('/', routes);
